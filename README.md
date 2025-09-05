@@ -17,8 +17,20 @@ int,str,bool,float
      *break         - stops the loop
      continue      - skip the current iteration*
      
-# ARRAYS AND STRINGS
+# ARRAYS 
   Array is a collection of elements, stored in continuous memory locations of SAME DATA TYPE   (fast in memory, easy to access with index)
                DIFFERENCE BETWEEN LIST AND ARRAY
+                               LIST                                         ARRAY
                  1) data type    -  can store mixed data type      |      stores only same type 
-                 2)
+                 2)felixable     -  less flexible                  |        more flexible
+                 3) speed        -  faster for numbers             |      slower for num operations
+                 4) example       
+                         nums=[1,2,3,4]                            |    import array
+                         print(nums[0])                                 arr=array.array('i',[1,2,3,4])
+                                                                        print(arr[0])
+
+# STRINGS
+  sequences of characters inside quotes( '' , " " , '''  or """ )
+     s = "hello" or 'hello' """hello"""
+
+      triple 
