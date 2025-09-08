@@ -105,4 +105,43 @@ notes:
 \"   # double quote
 \'   # single quote
 
-  
+name = "Kiruthi"
+age = 18
+
+'format method'
+print("My name is {}, age {}".format(name, age))
+
+'f-string (Python 3.6+)'
+print(f"My name is {name}, age {age}")
+
+# Functions in Python
+   What is a Function?
+       A function is a block of reusable code that performs a specific task.
+       Helps avoid repetition and organize your program.
+
+        def hello():
+            print("Hello Kiruthi")
+            
+  def → keyword to define a function
+  greet → function name
+  () → parameters (empty here)
+  : → start of function block
+  Indentation is mandatory
+
+  when the function is called, the block of code under it will run.   for eg. hello()                          output: Hello Kiruthi
+
+  1) Function Parameters
+    Functions can take inputs (arguments).
+         
+         def hello(name):
+    print(f"Hello {name}")
+    hello("sudha")
+
+  output: Hello sudha
+
+ 2) Default Parameters
+
+        def greet(name="Guest"):
+        print(f"Hello {name}")
+        greet()                                                              # Hello Guest
+        greet("Kiki")                                                        # Hello Kiki
