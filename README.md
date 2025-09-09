@@ -145,3 +145,60 @@ print(f"My name is {name}, age {age}")
         print(f"Hello {name}")
         greet()                                                              # Hello Guest
         greet("Kiki")                                                        # Hello Kiki
+
+  3) Return Statement
+     Functions can return a value.
+
+         def add(a, b):
+         return a + b
+         result = add(5, 10)
+         print(result)                                                       # 15
+
+  4)positional arguement 
+  
+    def info(name, age):
+        print(f"{name} is {age} years old")
+    info("Kiki", 18)                                                        #Kiki is 18 years old
+
+  5)keyword arguement 
+  
+    def info(name, age):
+        print(f"{name} is {age} years old")
+    info(age=18, name="Kiki") # keyword arguments                          #Kiki is 18 years old
+
+  6) Variable-length Arguments
+        *args → for multiple positional arguments
+        **kwargs → for multiple keyword arguments
+
+    def sum_all(*args):
+       return sum(args)
+    print(sum_all(1,2,3,4))                                                 # 10
+
+    def show_info(**kwargs):
+        print(kwargs)
+    show_info(subject='python', mark=94)                                    # {'subject': 'python', 'mark': 94}
+
+  7) Lambda (Anonymous) Functions
+
+    square = lambda x: x**2
+    print(square(5))                                                      # 25
+Useful for short one-line functions
+
+  8) Scope of Variables
+         Local variable → inside function, cannot be accessed outside
+         Global variable → defined outside, can be accessed anywhere
+
+    x = 10   #global
+
+    def func():
+        y = 5  # local
+    print(x, y)
+    func()
+    print(y)  # Error, y is local
+
+  9) Docstrings in Functions
+
+    def greet(name):
+        """This function greets the person with given name."""
+        print(f"Hello {name}")
+    print(greet.__doc__)
