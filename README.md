@@ -202,3 +202,54 @@ Useful for short one-line functions
         """This function greets the person with given name."""
         print(f"Hello {name}")
     print(greet.__doc__)
+
+
+# Classes in Python
+
+  1. What is a Class?
+       A class is a blueprint for creating objects.
+       Objects have attributes (data) and methods (functions).
+       Helps organize related data & functions together.
+
+  2. Defining a Class
+        class Person:
+             pass  # empty class
+
+  3. Creating Objects
+           p1 = Person()  # object of class Person
+
+  4. Attributes
+        class Person:
+            def __init__(self, name, age):
+            self.name = name  # attribute
+            self.age = age
+            p1 = Person("Kiki", 17)
+print(p1.name)  # Kiki
+print(p1.age)   # 17
+
+
+__init__ → constructor, runs when object is created
+self → represents the current object
+
+  5. Methods
+        class Person:
+            def __init__(self, name, age):
+            self.name = name
+            self.age = age
+            def greet(self):
+                print(f"Hello, I am {self.name}")
+            p1 = Person("Kiki", 17)
+           p1.greet()  # Hello, I am Kiki
+
+  6. Instance vs Class Variables
+        class Student:
+            school = "XYZ School"  # class variable, shared
+            def __init__(self, name):
+                self.name = name  # instance variable, unique 
+s1 = Student("Kiki")
+s2 = Student("Ramu")
+print(s1.school, s1.name)  # XYZ School Kiki
+print(s2.school, s2.name)  # XYZ School Ramu
+
+  
+
